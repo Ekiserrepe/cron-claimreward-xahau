@@ -1,0 +1,34 @@
+{
+  "name": "cron-claimreward-xahau",
+  "version": "1.0.0",
+  "description": "Automated ClaimReward system for Xahau using Hooks and CronSet",
+  "main": "checkAccount.js",
+  "scripts": {
+    "check": "node checkAccount.js",
+    "cronset": "node cronSet.js",
+    "accountset": "node accountSet.js",
+    "installhook": "node installHook.js"
+  },
+  "keywords": [
+    "xahau",
+    "xrpl",
+    "hooks",
+    "claimreward",
+    "automation",
+    "cron",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "xahau": "^4.0.3",
+    "xrpl-accountlib": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cron-claimreward-xahau.git"
+  }
+}
