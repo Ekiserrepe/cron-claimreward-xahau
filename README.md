@@ -40,6 +40,9 @@ cron-claimreward-xahau/
 ├── checkAccount.js        # Check account info and calculate next claim
 ├── cronSet.js             # Set up automated CronSet transaction
 ├── installHook.js         # Install ClaimReward Hook
+├── uninstallCronSet.js   # Remove existing CronSet schedule
+├── uninstallHook.js      # Remove installed ClaimReward Hook
+├── clearAccountFlag.js   # Clear the AccountSet hook flag
 ├── claimReward.c          # C Hook for automated claiming
 ├── package.json           # Project dependencies
 └── README.md              # This file
@@ -123,6 +126,22 @@ Then configure and run CronSet:
 npm run cronset
 # or
 node cronSet.js
+```
+
+If you need to remove the automation later:
+
+```bash
+npm run uninstallcron
+# or
+node uninstallCronSet.js
+
+npm run uninstallhook
+# or
+node uninstallHook.js
+
+npm run clearflag
+# or
+node clearAccountFlag.js
 ```
 
 **StartTime Options:**
